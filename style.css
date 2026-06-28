@@ -9,6 +9,20 @@
 }
 
 /* =========================
+     VARIABLES
+========================= */
+
+:root {
+    --color-primario: #1e3a8a;
+    --color-secundario: #2563eb;
+    --color-fondo: #f5f8fb;
+    --color-texto: #1f2d3d;
+    --color-gris: #4b5563;
+    --color-borde: #d1d5db;
+    --color-linea: #e5e7eb;
+}
+
+/* =========================
      ESTILO GENERAL
 ========================= */
 
