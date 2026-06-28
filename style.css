@@ -94,6 +94,53 @@ main {
 }
 
 /* =========================
+     HERO
+========================= */
+
+.hero {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 20px auto;
+}
+
+.hero-botones {
+    margin-top: 30px;
+}
+
+.hero-botones a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-principal {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-principal:hover {
+    background: #1e3a8a;
+}
+
+.btn-secundario {
+    border: 2px solid #2563eb;
+    color: #2563eb;
+}
+
+.btn-secundario:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* =========================
      TITULOS Y SECCIONES
 ========================= */
 
