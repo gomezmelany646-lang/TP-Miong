@@ -38,7 +38,7 @@ body {
 ========================= */
 
 header {
-    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
     color: white;
     text-align: center;
     padding: 30px 20px;
