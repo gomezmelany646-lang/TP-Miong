@@ -28,8 +28,8 @@
 
 body {
     font-family: "Segoe UI", Roboto, Arial, sans-serif;
-    background-color: #f5f8fb;
-    color: #1f2d3d;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
     line-height: 1.6;
 }
 
