@@ -150,19 +150,19 @@
             <form action="#" method="post">
 
                 <label for="nombre-prof">Nombre y apellido</label>
-                <input id="nombre-prof" type="text" required>
+                <input id="nombre-prof" name="nombre-prof" type="text" required>
 
                 <label for="profesion">Profesión</label>
-                <input id="profesion" type="text" required>
+                <input id="profesion" name="profesion" type="text" required>
 
                 <label for="email-prof">Email</label>
-                <input id="email-prof" type="email" required>
+                <input id="email-prof" name="email-prof" type="email" required>
 
                 <label for="tel-prof">Teléfono</label>
-                <input id="tel-prof" type="tel">
+                <input id="tel-prof" name="tel-prof" type="tel">
 
                 <label for="modalidad">Modalidad</label>
-                <select id="modalidad">
+                <select id="modalidad" name="modalidad">
                     <option>Atención profesional</option>
                     <option>Talleres</option>
                     <option>Charlas</option>
@@ -170,7 +170,7 @@
                 </select>
 
                 <label for="experiencia">Experiencia</label>
-                <textarea id="experiencia" rows="5"></textarea>
+                <textarea id="experiencia" name="experiencia" rows="5"></textarea>
 
                 <button type="submit">Quiero colaborar</button>
 
@@ -187,19 +187,19 @@
             <form action="#" method="post">
 
                 <label for="nombre-taller">Nombre y apellido</label>
-                <input id="nombre-taller" type="text" required>
+                <input id="nombre-taller" name="nombre-taller" type="text" required>
 
                 <label for="edad">Edad</label>
-                <input id="edad" type="number" min="1" max="120" required>
+                <input id="edad" name="edad" type="number" min="1" max="120" required>
 
                 <label for="email-taller">Email</label>
-                <input id="email-taller" type="email" required>
+                <input id="email-taller" name="email-taller" type="email" required>
 
                 <label for="tel-taller">Teléfono</label>
-                <input id="tel-taller" type="tel">
+                <input id="tel-taller" name="tel-taller" type="tel">
 
                 <label for="taller">Taller de interés</label>
-                <select id="taller">
+                <select id="taller" name="taller">
                     <option>Cuerpo en movimiento</option>
                     <option>Arte que habla</option>
                     <option>Mi voz, mi mundo</option>
@@ -207,7 +207,7 @@
                 </select>
 
                 <label for="mensaje-taller">Mensaje</label>
-                <textarea id="mensaje-taller" rows="5"></textarea>
+                <textarea id="mensaje-taller" name="mensaje-taller" rows="5"></textarea>
 
                 <button type="submit">Inscribirme</button>
 
