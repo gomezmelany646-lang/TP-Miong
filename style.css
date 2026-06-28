@@ -1,324 +1,286 @@
-/*     
-    RESET GENERAL
-*/
+/* =========================
+     RESET GENERAL
+========================= */
 
-*{  margin: 0; 
-    padding: 0; 
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/*   
-    ESTILO GENERAL
-*/
+/* =========================
+     ESTILO GENERAL
+========================= */
 
-body 
-{
-    font-family: Arial, sans-serif;
-    background-color: #f5fbfc;
-    color:#000;
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f5f8fb;
+    color: #1f2d3d;
     line-height: 1.6;
-
 }
 
-/*
-    HEADER
-*/
+/* =========================
+     ENCABEZADO
+========================= */
 
-header 
-{
-    background:#4db6c7;
+header {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
     color: white;
     text-align: center;
-    padding: 60px 20px; 
-
+    padding: 30px 20px;
 }
 
-header h1 
-{
-    font-size: 50px;
+header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
     margin-bottom: 10px;
-
 }
 
-header p 
-{
-    font-size: 20px;
-
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
 }
 
-
-/*
-    NAVBAR
-*/
-
-
-
-nav 
-{
-    background-color: #127da0;
-    padding: 15px;
-    text-align: center;
+header p {
+    opacity: 0.9;
 }
 
-nav a 
-{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight: bold;
+/* =========================
+     MENÚ DE NAVEGACIÓN
+========================= */
+
+nav {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-
-nav a hover 
-{
-    color:#caf0f8;
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
 }
 
-/*
-        MAIN
-*/
-
-main 
-{
-    padding: 50px 20px;
-
-
+nav ul li {
+    margin: 10px 15px;
 }
 
-
-/*
-    INICIO 
-*/
-
-#index 
-{
-    text-align: center;
-    margin-bottom: 80px;
+nav ul li a {
+    text-decoration: none;
+    color: #1e3a8a;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
-#index h2
-{
-    font-size: 40px;
-    color:#2c7d20;
-    margin-bottom: 20px;
-
+nav ul li a:hover {
+    background-color: #2563eb;
+    color: white;
 }
 
-#index p
-{
-    max-width: 900px;
-    margin:auto;
-    font-size: 18px;
-}
+/* =========================
+     CONTENIDO PRINCIPAL
+========================= */
 
-/* 
-    NOSOTROS
-*/
-
-
-#nosotros
-{
-    max-width: 1000px;
-    margin:auto;
-}
-
-#nosotros h2
-{
-    text-align: center;
-    color:#2c7da0;
-    margin-bottom: 30px;
-
-}
-
-#nostros h3
-{
-    color:#168aad;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-#nostros p 
-{
-    margin-bottom: 20px;
-
-}
-
-/* 
-    PROGRAMA
-*/
-
-#programa 
-{
-    text-align: center;
-
-}
-
-#programas h2
-{
-    color:#127da0;
-    margin-bottom: 20px;
-
-} 
-
-#programas p
-
-{
-    max-width: 900px;
+main {
+    max-width: 1100px;
     margin: auto;
-    margin-bottom: 20px;
-
-
+    padding: 30px 20px;
 }
 
+/* =========================
+     TITULOS Y SECCIONES
+========================= */
 
-/*
-    GRID DE PROGRAMAS (Sirve para organizar los talleres en columnas y filas )
+h2 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
 
-*/
+h3 {
+    color: #2563eb;
+    margin-bottom: 8px;
+}
 
-
-
-.programas-grid
-{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax (280px,1fr));
-    gap: 25px;
+section {
     margin-bottom: 40px;
 }
 
-/*
-    TALLERES
-*/
-
-.programas-grid
-{
-    background-color: white;
-    padding:25px;
-    border-radius: 15px;
-    text-align: left;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
-    transition: transform 0.3s;
-
+hr {
+    margin: 30px 0;
+    border: none;
+    height: 1px;
+    background: #e5e7eb;
 }
 
+/* =========================
+     CARDS / ARTÍCULOS
+========================= */
 
-.programas:hover
-{
-    transform: translatey(-5 px);
-
+article {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
 }
 
-
-.programas h3
-{
-    color:#168aad;
-    margin-bottom: 15px;
-
+article:hover {
+    transform: translateY(-3px);
 }
 
-.programas p
-{
-    margin-bottom: 15px;
-
-}
-
-.programas ul 
-{
-    margin-left: 20px;
-    margin-top:10px;
-
-}
-
-.programas li 
-{
-    margin-bottom: 8px;
-
-}
-
-/* 
-    CONTACTO
-*/
-
-
-#contacto 
-{
-    text-align: center;
-
-}
-
-#contacto h2 
-{
-    color:#12cda0;
-    margin-bottom: 20px;
-    
-}
-
-#contacto p 
-{
-    margin-bottom: 15px;
-
-}
-
-/*
-    FORMULARIO
-*/
-
-form 
-{
-    max-width: 700px;
-    margin: 40px auto;
-    display:flex;
-    flex-direction: column;
-}
-
-label{
-    margin-top: 15px;
-    margin-bottom: 8px;
+article a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2563eb;
     font-weight: bold;
-    text-align: left;
+    text-decoration: none;
 }
 
-input,select,textarea
-{
-    padding :12px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 16px;
+/* =========================
+     IMÁGENES
+========================= */
 
+img {
+    max-width: 100%;
+    border-radius: 12px;
 }
 
-textarea
-{
-    resize: vertical;
+.imagen-nosotros,
+.imagen-contacto {
+    margin-top: 15px;
 }
 
-button 
-{
-    margin-top:25px;
-    padding:15px;
-    background-color: #168aad;
-    color:white;
-    border:none;
-    border-radius: 10px;
-    cursor:pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-    
+/* =========================
+     FORMULARIOS
+========================= */
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-top: 15px;
 }
 
-button:hover{
-    background-color: #2c7da0;
-
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
 }
 
-/*
-    FOOTER
-*/
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #2563eb;
+}
+
+/* =========================
+     BOTONES
+========================= */
+
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1e3a8a;
+}
+
+/* =========================
+     PROGRAMAS / TALLERES
+========================= */
+
+.taller {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.taller ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* =========================
+     FORMULARIOS EN GRID
+========================= */
+
+.formularios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.formulario-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* =========================
+     MENSAJE FINAL
+========================= */
+
+.mensaje-final {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #1e3a8a;
+    margin-top: 30px;
+}
+
+/* =========================
+     FOOTER
+========================= */
 
 footer {
-    background-color: #2c7da0;
-    color:white;
     text-align: center;
-    padding: 25px;
-    margin-top: 60px;
+    padding: 20px;
+    background-color: #1e3a8a;
+    color: white;
+    margin-top: 40px;
+}
+
+/* =========================
+     RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
