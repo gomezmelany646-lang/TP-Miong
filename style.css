@@ -247,6 +247,36 @@ button:hover {
 }
 
 /* =========================
+     ESTADÍSTICAS
+========================= */
+
+.estadisticas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.estadistica {
+    background: #ffffff;
+    text-align: center;
+    padding: 25px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.estadistica h3 {
+    font-size: 2rem;
+    color: #1e3a8a;
+    margin-bottom: 8px;
+}
+
+.estadistica p {
+    color: #4b5563;
+    font-weight: 500;
+}
+
+/* =========================
      MENSAJE FINAL
 ========================= */
 
