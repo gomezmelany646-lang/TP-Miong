@@ -336,6 +336,20 @@ button:hover {
 }
 
 /* =========================
+     DATOS DE CONTACTO
+========================= */
+
+.datos-contacto a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.datos-contacto a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
      FOOTER
 ========================= */
 
