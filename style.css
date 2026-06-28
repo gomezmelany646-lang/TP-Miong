@@ -328,12 +328,12 @@ button:hover {
 
 .estadistica h3 {
     font-size: 2rem;
-    color: #1e3a8a;
+    color: var(--color-primario);
     margin-bottom: 8px;
 }
 
 .estadistica p {
-    color: #4b5563;
+    color: var(--color-gris);
     font-weight: 500;
 }
 
@@ -345,7 +345,7 @@ button:hover {
     text-align: center;
     font-weight: bold;
     font-size: 1.1rem;
-    color: #1e3a8a;
+    color: var(--color-primario);
     margin-top: 30px;
 }
 
@@ -354,7 +354,7 @@ button:hover {
 ========================= */
 
 .datos-contacto a {
-    color: #2563eb;
+    color: var(--color-secundario);
     text-decoration: none;
     font-weight: 600;
 }
@@ -370,7 +370,7 @@ button:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #1e3a8a;
+    background-color: var(--color-primario);
     color: white;
     margin-top: 40px;
 }
