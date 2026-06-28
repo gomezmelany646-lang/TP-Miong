@@ -260,7 +260,7 @@ border-color: var(--color-secundario);
 button {
     margin-top: 15px;
     padding: 10px 15px;
-    background-color: #2563eb;
+    background-color: var(--color-secundario);
     color: white;
     border: none;
     border-radius: 8px;
@@ -270,7 +270,7 @@ button {
 }
 
 button:hover {
-    background-color: #1e3a8a;
+    background-color: var(--color-primario);
 }
 
 /* =========================
