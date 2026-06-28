@@ -259,21 +259,21 @@ main {
 }
 
 .btn-principal {
-    background: #2563eb;
+    background: var(--color-secundario);
     color: white;
 }
 
 .btn-principal:hover {
-    background: #1e3a8a;
+    background: var(--color-primario);
 }
 
 .btn-secundario {
-    border: 2px solid #2563eb;
-    color: #2563eb;
+    border: 2px solid var(--color-secundario);
+    color: var(--color-secundario);
 }
 
 .btn-secundario:hover {
-    background: #2563eb;
+    background: var(--color-secundario);
     color: white;
 }
 
@@ -490,7 +490,7 @@ border-color: var(--color-secundario);
 button {
     margin-top: 15px;
     padding: 10px 15px;
-    background-color: #2563eb;
+    background-color: var(--color-secundario);
     color: white;
     border: none;
     border-radius: 8px;
@@ -500,7 +500,7 @@ button {
 }
 
 button:hover {
-    background-color: #1e3a8a;
+    background-color: var(--color-primario);
 }
 
 /* =========================
@@ -558,12 +558,12 @@ button:hover {
 
 .estadistica h3 {
     font-size: 2rem;
-    color: #1e3a8a;
+    color: var(--color-primario);
     margin-bottom: 8px;
 }
 
 .estadistica p {
-    color: #4b5563;
+    color: var(--color-gris);
     font-weight: 500;
 }
 
@@ -575,7 +575,7 @@ button:hover {
     text-align: center;
     font-weight: bold;
     font-size: 1.1rem;
-    color: #1e3a8a;
+    color: var(--color-primario);
     margin-top: 30px;
 }
 
@@ -584,7 +584,7 @@ button:hover {
 ========================= */
 
 .datos-contacto a {
-    color: #2563eb;
+    color: var(--color-secundario);
     text-decoration: none;
     font-weight: 600;
 }
@@ -603,7 +603,7 @@ footer {
     color:var(--color-texto);
     text-align: center;
     padding: 20px;
-    background-color: #1e3a8a;
+    background-color: var(--color-primario);
     color: white;
     margin-top: 40px;
 }
