@@ -159,12 +159,12 @@ main {
 ========================= */
 
 h2 {
-    color: #1e3a8a;
+    color: var(--color-primario);
     margin-bottom: 10px;
 }
 
 h3 {
-    color: #2563eb;
+    color: var(--color-secundario);
     margin-bottom: 8px;
 }
 
