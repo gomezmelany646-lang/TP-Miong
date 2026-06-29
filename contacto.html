@@ -74,7 +74,9 @@
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-                <button type="submit">Enviar</button>
+                <!-- BOTON ENVIAR CON JAVA -->
+
+                <button type="submit" onclick="enviarFormulario(event)">Enviar</button>
 
             </form>
 
@@ -132,6 +134,15 @@
         window.addEventListener('scroll', () => {
             btn.style.display = window.scrollY > 300 ? 'block' : 'none'
         })
+    </script>
+
+    <!-- MENSAJE AL ENVIAR JAVA -->
+
+    <script>
+        function enviarFormulario(event) {
+            event.preventDefault()
+            alert('¡Gracias por escribirnos! Te responderemos altoke xD')
+        }
     </script>
 
 </body>
