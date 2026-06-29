@@ -309,6 +309,19 @@
         })
     </script>
 
+    <!-- RESALTAR TALLERES Y PROFESIONALES AL PASAR EL RANTONCITO POR ARRIBA JAVA-->
+<script>
+    const talleres = document.querySelectorAll('.taller')
+    talleres.forEach(taller => {
+        taller.addEventListener('mouseover', () => {
+            taller.style.borderLeft = '4px solid #2563eb'
+        })
+        taller.addEventListener('mouseout', () => {
+            taller.style.borderLeft = 'none'
+        })
+    })
+</script>
+
 </body>
 
 </html>
