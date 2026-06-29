@@ -7,7 +7,7 @@
     <meta name="description" content="Contactate con SANAR. Completá el formulario, llamanos al 0800-SANAR-YA o escribinos a comunidad@sanar.org. Todo contacto es confidencial.">
 
     <!-- CSS -->
-
+     
     <link rel="stylesheet" href="style.css">
 
     <title>Contacto - SANAR</title>
@@ -15,44 +15,27 @@
 
 <body>
 
-<!-- PRINCIPAL -->
-
 <header>
-
-    <h1>SANAR</h1> <!-- Nombre del sitio -->
-
-    <p>Estamos para escucharte y acompañarte.</p> <!-- Frase de presentación -->
-
+    <h1>SANAR</h1>
+    <p>Estamos para escucharte y acompañarte.</p>
 </header>
 
-<!-- MENÚ DE NAVEGACIÓN -->
-
- HEAD
-        <footer>
-           <h3> Información </h3> 
-           <p>ubicacion:</p>
-           <p>Av.Rivadavia 1255 <br>
-                Buenos Aires, Argentina
+<!-- MENU DE NAVEGACIÓN -->
 
 <nav>
     <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="nosotros.html">Sobre Nosotros</a></li>
         <li><a href="programas.html">Nuestros Programas</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="contacto.html" class="activo">Contacto</a></li>
     </ul>
 </nav>
 
-<!-- CONTENIDO PRINCIPAL -->
-
 <main>
 
-
-    <!-- LA SECCIÓN DE CONTACTO -->
+    <!-- SECCION DE CONTACTO -->
 
     <section id="contacto">
-
-        <!-- INTRODUCCION -->
 
         <p>
             La <strong>SALUD MENTAL</strong> es fundamental para el bienestar integral de todas las personas.
@@ -63,8 +46,6 @@
             Si tenés consultas sobre nuestros talleres, programas o formas de colaborar,
             completá el formulario y te responderemos.
         </p>
-
-        <!-- IMAGEN EN LA SECCION -->
 
         <img src="Imagenes/contacto.jpg" alt="Equipo SANAR en espacio de acompañamiento" class="imagen-contacto">
 
@@ -79,16 +60,13 @@
             <input type="email" id="email" name="email" required>
 
             <label for="motivo">Motivo:</label>
-            <select id="motivo" name="motivo">
-
-                <option value="" disabled selected>-- Seleccioná --</option> <!-- opción vacía -->
-
+            <select id="motivo" name="motivo" required>
+                <option value="" disabled selected>-- Seleccioná --</option>
                 <option value="consulta">Consulta general</option>
                 <option value="talleres">Talleres</option>
                 <option value="acompanamiento">Acompañamiento</option>
                 <option value="voluntariado">Voluntariado</option>
                 <option value="otro">Otro</option>
-
             </select>
 
             <label for="mensaje">Mensaje:</label>
@@ -124,9 +102,7 @@
 <!-- COPY -->
 
 <footer>
-
     <p>&copy; 2026 SANAR. Todos los derechos reservados.</p>
-
 </footer>
 
 </body>
