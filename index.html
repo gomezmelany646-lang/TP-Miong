@@ -22,8 +22,7 @@
     <p>Salud mental y bienestar integral</p>
 </header>
 
-<!-- MENU DE NAVEGACIÓN -->
-
+<!-- MENU DE NAVEGACION -->
 <nav>
     <ul>
         <li><a href="index.html" class="activo">Inicio</a></li>
@@ -32,8 +31,6 @@
         <li><a href="contacto.html">Contacto</a></li>
     </ul>
 </nav>
-
-<!-- CONTENIDO PRINCIPAL -->
 
 <main>
 
@@ -46,9 +43,12 @@
             la salud mental y al acompañamiento comunitario, brindando espacios
             seguros donde cada persona pueda expresarse, aprender y desarrollarse.
         </p>
+
+        <!-- BOTONES DEL HERO -->
+
         <div class="hero-botones">
-            <a href="programas.html" class="btn-principal">Conocé nuestros programas</a>
-            <a href="contacto.html" class="btn-secundario">Contactanos</a>
+        <a href="programas.html" class="btn-principal">Conocé nuestros programas</a>
+        <a href="contacto.html" class="btn-secundario">Contactanos</a>
         </div>
     </section>
 
@@ -56,25 +56,25 @@
 
     <section class="estadisticas">
 
-        <article class="estadistica">
-            <h3>800+</h3>
-            <p>Personas acompañadas</p>
-        </article>
+    <article class="estadistica">
+        <h3>800+</h3>
+        <p>Personas acompañadas</p>
+    </article>
 
-        <article class="estadistica">
-            <h3>15</h3>
-            <p>Profesionales</p>
-        </article>
+    <article class="estadistica">
+        <h3>15</h3>
+        <p>Profesionales</p>
+    </article>
 
-        <article class="estadistica">
-            <h3>4</h3>
-            <p>Talleres activos</p>
-        </article>
+    <article class="estadistica">
+      <h3>4</h3>
+      <p>Talleres activos</p>
+    </article>
 
-        <article class="estadistica">
-            <h3>5</h3>
-            <p>Años de trayectoria</p>
-        </article>
+    <article class="estadistica">
+        <h3>5</h3>
+        <p>Años de trayectoria</p>
+    </article>
 
     </section>
 
@@ -91,7 +91,7 @@
         <article>
             <h3>Sobre Nosotros</h3>
             <p>Conocé nuestra historia, misión y valores.</p>
-            <a href="nosotros.html">Ir a Nosotros →</a>
+            <a href="nosotros.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Conocé quiénes somos y qué nos mueve">Ir a Nosotros →</a>
         </article>
 
         <!-- PROGRAMAS -->
@@ -99,7 +99,7 @@
         <article>
             <h3>Programas</h3>
             <p>Talleres y espacios de acompañamiento emocional.</p>
-            <a href="programas.html">Ver Programas →</a>
+            <a href="programas.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Ver todos nuestros talleres disponibles">Ver Programas →</a>
         </article>
 
         <!-- CONTACTO -->
@@ -107,7 +107,10 @@
         <article>
             <h3>Contacto</h3>
             <p>Sumate o escribinos para más información.</p>
-            <a href="contacto.html">Contactar →</a>
+
+        <!-- LINK CON TOOLTIP DE BOOTSTRAP -->
+
+            <a href="contacto.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Te respondemos en menos de 24hs">Contactar →</a>
         </article>
 
     </section>
@@ -132,6 +135,12 @@
 
 <!-- Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ACTIVAR TOOLTIPS DE BOOTSTRAP -->
+<script>
+    const tooltips = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    tooltips.forEach(t => new bootstrap.Tooltip(t))
+</script>
 
 </body>
 </html>
