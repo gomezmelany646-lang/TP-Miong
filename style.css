@@ -66,9 +66,10 @@ header h1 {
 }
 
 header p {
-    opacity: 0.88;
+    opacity: 1;
     font-size: 1.05rem;
     margin-top: 6px;
+    color: #ffffff;
 }
 
 /* =========================
@@ -501,6 +502,10 @@ footer {
     color: var(--color-blanco);
     margin-top: 50px;
     font-size: 0.9rem;
+}
+
+footer p {
+    color: #ffffff;
 }
 
 /* =========================
