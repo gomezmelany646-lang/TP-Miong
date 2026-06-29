@@ -16,9 +16,9 @@
     --color-primario: #1e3a8a;
     --color-secundario: #2563eb;
     --color-acento: #3b82f6;
-    --color-fondo: #e8ecf0;
+    --color-fondo: #c8d0d9;
     --color-texto: #1f2d3d;
-    --color-gris: #2d3748;
+    --color-gris: #1a202c;
     --color-borde: #d1d5db;
     --color-linea: #e5e7eb;
     --color-blanco: #ffffff;
@@ -33,7 +33,7 @@
 
 body {
     font-family: "Segoe UI", Roboto, Arial, sans-serif;
-    background-color: #c8d0d9 !important;
+    background-color: var(--color-fondo);
     color: var(--color-texto);
     line-height: 1.7;
     font-size: 1rem;
