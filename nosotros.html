@@ -183,6 +183,10 @@
 
     <footer>
         <p>&copy; 2026 SANAR. Todos los derechos reservados.</p>
+
+        <!-- BOTON VOLVER ARRIBA JAVA-->
+
+        <button id="btnArriba" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>F
     </footer>
 
     <!-- Bootstrap  -->
@@ -193,6 +197,15 @@
     <script>
         const tooltips = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         tooltips.forEach(t => new bootstrap.Tooltip(t))
+    </script>
+
+    <!-- MOSTRAR Y OCULTAR BOTON JAVA -->
+
+    <script>
+        const btn = document.getElementById('btnArriba')
+        window.addEventListener('scroll', () => {
+            btn.style.display = window.scrollY > 300 ? 'block' : 'none'
+        })
     </script>
 
 </body>

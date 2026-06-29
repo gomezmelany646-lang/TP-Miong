@@ -582,3 +582,23 @@ ul li {
     padding: 20px;
     border-radius: var(--radio);
 }
+
+/* =========================
+   BOTON VOLVER ARRIBA
+========================= */
+
+#btnArriba {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: var(--sombra);
+}
