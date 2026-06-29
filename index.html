@@ -20,6 +20,10 @@
         <img src="imagenes/logo-ong.jpeg" alt="Logo SANAR">
         <h1>SANAR</h1>
         <p>Salud mental y bienestar integral</p>
+
+        <!-- BOTON MODO OSCURO JAVA -->
+
+        <button id="btnOscuro" onclick="toggleOscuro()">🌙 Modo oscuro</button>
     </header>
 
     <!-- MENU DE NAVEGACION -->
@@ -162,8 +166,22 @@
         })
     </script>
 
+    <!-- MODO OSCURO JAVA -->
+
+    <script>
+        function toggleOscuro() {
+            document.body.classList.toggle('modo-oscuro')
+            const btnOscuro = document.getElementById('btnOscuro')
+            if (document.body.classList.contains('modo-oscuro')) {
+                btnOscuro.textContent = '☀️ Modo claro'
+            } else {
+                btnOscuro.textContent = '🌙 Modo oscuro'
+            }
+        }
+    </script>
+
     <!-- MENSAJE DE DESPEDIDA AL CERRAR LA PAGINA JAVA -->
-     
+
     <script>
         window.addEventListener('beforeunload', () => {
             return '¿Seguro que querés salir de SANAR? Mala onda'

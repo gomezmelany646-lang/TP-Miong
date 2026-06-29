@@ -22,6 +22,10 @@
     <header>
         <h1>SANAR</h1>
         <p>Cuidamos tu salud, acompañamos tu vida</p>
+
+        <!-- BOTON MODO OSCURO JAVA -->
+
+        <button id="btnOscuro" onclick="toggleOscuro()">🌙 Modo oscuro</button>
     </header>
 
     <!-- MENU DE NAVEGACIÓN -->
@@ -290,6 +294,20 @@
         <button id="btnArriba" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>F
     </footer>
 
+    <!-- MODO OSCURO CON JAVA -->
+     
+    <script>
+        function toggleOscuro() {
+            document.body.classList.toggle('modo-oscuro')
+            const btn = document.getElementById('btnOscuro')
+            if (document.body.classList.contains('modo-oscuro')) {
+                btn.textContent = '☀️ Modo claro'
+            } else {
+                btn.textContent = '🌙 Modo oscuro'
+            }
+        }
+    </script>
+
     <!-- Bootstrap  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -323,7 +341,7 @@
 </script>
 
 <!-- MENSAJE DE DESPEDIDA AL CERRAR LA PAGINA JAVA -->
- 
+
     <script>
         window.addEventListener('beforeunload', () => {
             return '¿Seguro que querés salir de SANAR? Mala onda'

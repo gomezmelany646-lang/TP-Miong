@@ -602,3 +602,39 @@ ul li {
     cursor: pointer;
     box-shadow: var(--sombra);
 }
+
+/* =========================
+   MODO OSCURO
+========================= */
+
+body.modo-oscuro {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+body.modo-oscuro header {
+    background: linear-gradient(135deg, #0a0a0a, #1a1a2e) !important;
+}
+
+body.modo-oscuro nav {
+    background-color: #1a1a1a !important;
+}
+
+body.modo-oscuro article,
+body.modo-oscuro .taller,
+body.modo-oscuro .estadistica,
+body.modo-oscuro form,
+body.modo-oscuro .datos-contacto,
+body.modo-oscuro .formulario-box {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+}
+
+body.modo-oscuro p,
+body.modo-oscuro li {
+    color: #c0c0c0 !important;
+}
+
+body.modo-oscuro main {
+    background-color: #121212 !important;
+}
