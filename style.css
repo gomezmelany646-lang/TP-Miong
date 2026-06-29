@@ -421,18 +421,6 @@ button:hover {
     margin: 0;
 }
 
-/* =========================
-   MENSAJE FINAL
-========================= */
-
-.mensaje-final {
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: var(--color-primario);
-    margin-top: 30px;
-    padding: 20px;
-}
 
 /* =========================
    DATOS DE CONTACTO
@@ -584,4 +572,19 @@ ul li {
     main {
         padding: 24px 14px;
     }
+}
+
+/* =========================
+   MENSAJE FINAL
+========================= */
+
+.mensaje-final {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--color-blanco);
+    background-color: var(--color-secundario);
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: var(--radio);
 }
