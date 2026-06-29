@@ -1,5 +1,5 @@
 /* =========================
-     RESET GENERAL
+   RESET GENERAL
 ========================= */
 
 * {
@@ -8,123 +8,76 @@
     box-sizing: border-box;
 }
 
- HEAD
-/*   
-    ESTILO GENERAL
-*/
-:root {
-    --color-h1: #0b465f;
-    --color-h2:#3F9B94;
-    --color-h3: #2F80A3;
-    --color-fondo: #F4FBFA ;
-    --color-tarjetas:#E3F5F2;
-    --color-botones: #2F80A3;
-    --color-imputs: #fafefd;
-    --color-texto: #0000;
-    --color-bordes:#8FDCD8;
-    --color-navbar-y-footer: #1F5E7A;
-     
-}
-body 
-{
-    font-family: Arial, sans-serif;
-    background-color:var(--color-fondo);
-    color:var(--color-texto);
-    line-height: 1.6;
-
 /* =========================
-     VARIABLES
+   VARIABLES
 ========================= */
-d6c24e186139bc938bb874c573f11b1ea406e87b
 
 :root {
     --color-primario: #1e3a8a;
     --color-secundario: #2563eb;
+    --color-acento: #3b82f6;
     --color-fondo: #f5f8fb;
     --color-texto: #1f2d3d;
     --color-gris: #4b5563;
     --color-borde: #d1d5db;
     --color-linea: #e5e7eb;
+    --color-blanco: #ffffff;
+    --sombra: 0 4px 12px rgba(0, 0, 0, 0.06);
+    --radio: 12px;
+    --transicion: 0.3s ease;
 }
 
 /* =========================
-     ESTILO GENERAL
+   ESTILO GENERAL
 ========================= */
 
- HEAD
-header 
-{
-    background:linear-gradient(135deg,#1F5E7A,#6cc8c2);
-}
 body {
     font-family: "Segoe UI", Roboto, Arial, sans-serif;
     background-color: var(--color-fondo);
     color: var(--color-texto);
-    line-height: 1.6;
+    line-height: 1.7;
+    font-size: 1rem;
 }
 
 /* =========================
-     ENCABEZADO
+   ENCABEZADO
 ========================= */
 
 header {
     background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
-    color: white;
+    color: var(--color-blanco);
     text-align: center;
-    padding: 30px 20px;
+    padding: 40px 20px;
 }
-
- HEAD
-header h1 
-{
-    color: var(--color-h1);
-    font-size: 50px;}
 
 header img {
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
-    margin-bottom: 10px;
-}
- HEAD
-header p 
-{
-    font-size: 20px;
-    color:var(--color-texto);
-}
-
-
-/*
-    NAVBAR
-*/
-
-
-
-nav 
-{
-    position: fixed;
-    background-color: var(--color-navbar-y-footer);
-    padding: 15px;
-    text-align: center;
+    margin-bottom: 12px;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    object-fit: cover;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    letter-spacing: 2px;
+    font-size: 2.6rem;
+    letter-spacing: 3px;
+    font-weight: 700;
 }
 
 header p {
-    opacity: 0.9;
-
+    opacity: 0.88;
+    font-size: 1.05rem;
+    margin-top: 6px;
 }
 
 /* =========================
-     MENÚ DE NAVEGACIÓN
+   MENÚ DE NAVEGACIÓN
 ========================= */
 
 nav {
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background-color: var(--color-blanco);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -135,368 +88,244 @@ nav ul {
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
+    padding: 4px 0;
 }
 
 nav ul li {
-    margin: 10px 15px;
+    margin: 8px 12px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: var(--color-primario);
     font-weight: 600;
-    padding: 8px 12px;
+    padding: 8px 14px;
     border-radius: 8px;
-    transition: 0.3s;
+    transition: background-color var(--transicion), color var(--transicion);
+    font-size: 0.95rem;
 }
 
- HEAD
-#index h2
-{
-    font-size: 40px;
-    color:var(--color-h2);
-    margin-bottom: 20px;}
-
-
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.activo {
     background-color: var(--color-secundario);
-    color: white;
-
+    color: var(--color-blanco);
 }
 
 /* =========================
-     CONTENIDO PRINCIPAL
+   CONTENIDO PRINCIPAL
 ========================= */
 
-HEAD
-/* 
-    NOSOTROS
-*/
-
-
-#nosotros
-{
-    max-width: 1000px;
-    margin:auto;
-}
-
-#nosotros h2
-{
-    text-align: center;
-    color:var(--color-h2);
-    margin-bottom: 30px;
-
-}
-
-#nostros h3
-{
-    color:var(--color-h3);
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-#nostros p 
-{
-    margin-bottom: 20px;
-
-}
-
-/* 
-    PROGRAMA
-*/
-
-#programa 
-{
-    text-align: center;
-
-}
-
-#programas h2
-{
-    color:var(--color-h2);
-    margin-bottom: 20px;
-
-} 
-
-#programas p
-
-{
-    max-width: 900px;
-}
 main {
     max-width: 1100px;
-
-    margin: auto;
-    padding: 30px 20px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
 /* =========================
-     HERO
+   HERO
 ========================= */
 
 .hero {
     text-align: center;
-    padding: 30px 10px;
+    padding: 40px 10px;
+}
+
+.hero h2 {
+    font-size: 1.9rem;
+    color: var(--color-primario);
+    margin-bottom: 16px;
 }
 
 .hero p {
     max-width: 750px;
-    margin: 20px auto;
+    margin: 0 auto 10px;
+    color: var(--color-gris);
+    font-size: 1.05rem;
 }
 
 .hero-botones {
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .hero-botones a {
     display: inline-block;
-    margin: 10px;
-    padding: 12px 22px;
+    padding: 12px 24px;
     text-decoration: none;
     border-radius: 8px;
     font-weight: 600;
-    transition: 0.3s;
+    transition: background-color var(--transicion), color var(--transicion);
 }
 
 .btn-principal {
-    background: var(--color-secundario);
-    color: white;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
 }
 
 .btn-principal:hover {
-    background: var(--color-primario);
+    background-color: var(--color-primario);
 }
 
 .btn-secundario {
     border: 2px solid var(--color-secundario);
     color: var(--color-secundario);
+    background-color: transparent;
 }
 
 .btn-secundario:hover {
-    background: var(--color-secundario);
-    color: white;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
 }
 
 /* =========================
-     TITULOS Y SECCIONES
+   TÍTULOS Y SECCIONES
 ========================= */
 
 h2 {
     color: var(--color-primario);
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    font-size: 1.6rem;
 }
 
 h3 {
     color: var(--color-secundario);
     margin-bottom: 8px;
+    font-size: 1.15rem;
 }
 
 section {
     margin-bottom: 40px;
 }
 
- HEAD
-/*
-    TALLERES
-*/
-
-.programas-grid
-{
-    background-color: var(--color-fondo);
-    padding:25px;
-    border-radius: 15px;
-    text-align: left;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
-    transition: transform 0.3s;
-
-}
 hr {
     margin: 30px 0;
     border: none;
     height: 1px;
-HEAD
-    background: #e5e7eb;
-    background: var(--color-linea);
+    background-color: var(--color-linea);
+}
 
+p {
+    margin-bottom: 12px;
+    color: var(--color-gris);
 }
 
 /* =========================
-     CARDS / ARTÍCULOS
+   CARDS / ARTÍCULOS
 ========================= */
 
 article {
-    background: white;
-    padding: 20px;
+    background-color: var(--color-blanco);
+    padding: 22px;
     margin: 15px 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    transition: transform 0.2s;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    transition: transform var(--transicion);
 }
 
- HEAD
-
-.programas h3
-{
-    color:var(--color-h3);
-    margin-bottom: 15px;
-
-}
-
-.programas p
-{
-    margin-bottom: 15px;
-
-}
-
-.programas ul 
-{
-    margin-left: 20px;
-    margin-top:10px;
-
-}
-
-.programas li 
-{
-    margin-bottom: 8px;
-
-}
-
-/* 
-    CONTACTO
-*/
-
-
-#contacto 
-{
-    text-align: center;
-
-}
-
-#contacto h2 
-{
-    color:var(--color-h2);
-    margin-bottom: 20px;
-    
-}
-
-#contacto p 
-{
-    margin-bottom: 15px;
-
-}
-
-/*
-    FORMULARIO
-*/
-
-form 
-{
-    max-width: 700px;
-    margin: 40px auto;
-    display:flex;
-    flex-direction: column;
-}
-
-label
-{
-    margin-top: 15px;
-    margin-bottom: 8px;
 article:hover {
-    transform: translateY(-3px);
-}}
+    transform: translateY(-4px);
+}
+
+article h3 {
+    margin-bottom: 8px;
+}
+
+article p {
+    margin-bottom: 8px;
+}
 
 article a {
     display: inline-block;
     margin-top: 10px;
-    color: #2563eb;
-
-    font-weight: bold;
+    color: var(--color-secundario);
+    font-weight: 700;
     text-decoration: none;
+    transition: color var(--transicion);
+}
+
+article a:hover {
+    color: var(--color-primario);
 }
 
 /* =========================
-     IMÁGENES
+   IMÁGENES
 ========================= */
 
 img {
     max-width: 100%;
-    border-radius: 12px;
+    border-radius: var(--radio);
+    display: block;
 }
 
 .imagen-nosotros,
 .imagen-contacto {
-    margin-top: 15px;
+    margin-top: 20px;
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
 }
 
- HEAD
-button 
-{
-    margin-top:25px;
-    padding:15px;
-    background-color: var(--color-fondo);
-    color:var(--color-texto);
-    border:none;
-    border-radius: 10px;
-    cursor:pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-    
-}
-
-button:hover{
-    background-color: var(--color-fondo);
-
-}
 /* =========================
-     FORMULARIOS
+   FORMULARIOS
 ========================= */
 
 form {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    margin-top: 15px;
+    background-color: var(--color-blanco);
+    padding: 24px;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    margin-top: 16px;
 }
 
 label {
     display: block;
-    margin-top: 10px;
+    margin-top: 14px;
+    margin-bottom: 4px;
     font-weight: 600;
-
+    color: var(--color-texto);
+    font-size: 0.95rem;
 }
 
 input,
 textarea,
 select {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
+    padding: 10px 12px;
+    margin-top: 4px;
     border: 1px solid var(--color-borde);
     border-radius: 8px;
     outline: none;
+    font-size: 0.95rem;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    transition: border-color var(--transicion);
 }
 
 input:focus,
 textarea:focus,
 select:focus {
-border-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    background-color: var(--color-blanco);
 }
 
 /* =========================
-     BOTONES
+   BOTONES
 ========================= */
 
 button {
-    margin-top: 15px;
-    padding: 10px 15px;
+    margin-top: 18px;
+    padding: 11px 20px;
     background-color: var(--color-secundario);
-    color: white;
+    color: var(--color-blanco);
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: background-color var(--transicion);
 }
 
 button:hover {
@@ -504,15 +333,24 @@ button:hover {
 }
 
 /* =========================
-     PROGRAMAS / TALLERES
+   PROGRAMAS / TALLERES
 ========================= */
 
 .taller {
-    background: white;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    background-color: var(--color-blanco);
+    padding: 22px;
+    margin: 16px 0;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    transition: transform var(--transicion);
+}
+
+.taller:hover {
+    transform: translateY(-3px);
+}
+
+.taller h3 {
+    margin-bottom: 8px;
 }
 
 .taller ul {
@@ -520,25 +358,34 @@ button:hover {
     padding-left: 20px;
 }
 
+.taller ul li {
+    margin-bottom: 6px;
+    color: var(--color-gris);
+}
+
 /* =========================
-     FORMULARIOS EN GRID
+   FORMULARIOS EN GRID
 ========================= */
 
 .formularios {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 24px;
 }
 
 .formulario-box {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    background-color: var(--color-blanco);
+    padding: 22px;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+}
+
+.formulario-box h3 {
+    margin-bottom: 6px;
 }
 
 /* =========================
-     ESTADÍSTICAS
+   ESTADÍSTICAS
 ========================= */
 
 .estadisticas {
@@ -549,15 +396,20 @@ button:hover {
 }
 
 .estadistica {
-    background: #ffffff;
+    background-color: var(--color-blanco);
     text-align: center;
-    padding: 25px 15px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 28px 16px;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    transition: transform var(--transicion);
+}
+
+.estadistica:hover {
+    transform: translateY(-3px);
 }
 
 .estadistica h3 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: var(--color-primario);
     margin-bottom: 8px;
 }
@@ -565,54 +417,111 @@ button:hover {
 .estadistica p {
     color: var(--color-gris);
     font-weight: 500;
+    margin: 0;
 }
 
 /* =========================
-     MENSAJE FINAL
+   MENSAJE FINAL
 ========================= */
 
 .mensaje-final {
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.1rem;
     color: var(--color-primario);
     margin-top: 30px;
+    padding: 20px;
 }
 
 /* =========================
-     DATOS DE CONTACTO
+   DATOS DE CONTACTO
 ========================= */
+
+.datos-contacto {
+    background-color: var(--color-blanco);
+    padding: 22px;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    margin-top: 20px;
+}
+
+.datos-contacto h3 {
+    margin-bottom: 14px;
+}
+
+.datos-contacto p {
+    margin-bottom: 8px;
+}
 
 .datos-contacto a {
     color: var(--color-secundario);
     text-decoration: none;
     font-weight: 600;
+    transition: color var(--transicion);
 }
 
 .datos-contacto a:hover {
+    color: var(--color-primario);
     text-decoration: underline;
 }
 
 /* =========================
-     FOOTER
+   SECCIÓN SUMATE
 ========================= */
 
-footer {
- HEAD
-    background-color: var(--color-navbar-y-footer);
-    color:var(--color-texto);
+.sumate-sanar {
+    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+    color: var(--color-blanco);
+    padding: 36px 28px;
+    border-radius: var(--radio);
     text-align: center;
-    padding: 20px;
-    background-color: var(--color-primario);
-    color: white;
-    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.sumate-sanar h2 {
+    color: var(--color-blanco);
+    font-size: 1.7rem;
+    margin-bottom: 12px;
+}
+
+.sumate-sanar p {
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* =========================
-     RESPONSIVE
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 24px 20px;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+/* =========================
+   LISTAS GENERALES
+========================= */
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 6px;
+    color: var(--color-gris);
+}
+
+/* =========================
+   RESPONSIVE
 ========================= */
 
 @media (max-width: 768px) {
+
     header h1 {
         font-size: 2rem;
     }
@@ -620,5 +529,32 @@ footer {
     nav ul {
         flex-direction: column;
         align-items: center;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-botones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formularios {
+        grid-template-columns: 1fr;
+    }
+
+    .estadisticas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .estadisticas {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 24px 14px;
     }
 }
