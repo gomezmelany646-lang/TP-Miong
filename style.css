@@ -1,5 +1,5 @@
 /* =========================
-     RESET GENERAL
+   RESET GENERAL
 ========================= */
 
 * {
@@ -8,123 +8,75 @@
     box-sizing: border-box;
 }
 
- HEAD
-/*   
-    ESTILO GENERAL
-*/
-:root {
-    --color-h1: #0b465f;
-    --color-h2:#3F9B94;
-    --color-h3: #2F80A3;
-    --color-fondo: #F4FBFA ;
-    --color-tarjetas:#E3F5F2;
-    --color-botones: #2F80A3;
-    --color-imputs: #fafefd;
-    --color-texto: #0000;
-    --color-bordes:#8FDCD8;
-    --color-navbar-y-footer: #1F5E7A;
-     
-}
-body 
-{
-    font-family: Arial, sans-serif;
-    background-color:var(--color-fondo);
-    color:var(--color-texto);
-    line-height: 1.6;
-
 /* =========================
-     VARIABLES
+   VARIABLES
 ========================= */
-d6c24e186139bc938bb874c573f11b1ea406e87b
 
 :root {
     --color-primario: #1e3a8a;
     --color-secundario: #2563eb;
-    --color-fondo: #f5f8fb;
+    --color-fondo: #c8d0d9;
     --color-texto: #1f2d3d;
-    --color-gris: #4b5563;
+    --color-gris: #1a202c;
     --color-borde: #d1d5db;
-    --color-linea: #e5e7eb;
+    --color-blanco: #ffffff;
+    --sombra: 0 4px 12px rgba(0, 0, 0, 0.06);
+    --radio: 12px;
+    --transicion: 0.3s ease;
 }
 
 /* =========================
-     ESTILO GENERAL
+   ESTILO GENERAL
 ========================= */
 
- HEAD
-header 
-{
-    background:linear-gradient(135deg,#1F5E7A,#6cc8c2);
-}
 body {
     font-family: "Segoe UI", Roboto, Arial, sans-serif;
     background-color: var(--color-fondo);
     color: var(--color-texto);
-    line-height: 1.6;
+    line-height: 1.7;
+    font-size: 1rem;
 }
 
 /* =========================
-     ENCABEZADO
+   ENCABEZADO
 ========================= */
 
 header {
     background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
-    color: white;
+    color: var(--color-blanco);
     text-align: center;
-    padding: 30px 20px;
+    padding: 40px 20px;
 }
-
- HEAD
-header h1 
-{
-    color: var(--color-h1);
-    font-size: 50px;}
 
 header img {
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
-    margin-bottom: 10px;
-}
- HEAD
-header p 
-{
-    font-size: 20px;
-    color:var(--color-texto);
-}
-
-
-/*
-    NAVBAR
-*/
-
-
-
-nav 
-{
-    position: fixed;
-    background-color: var(--color-navbar-y-footer);
-    padding: 15px;
-    text-align: center;
+    margin-bottom: 12px;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    object-fit: cover;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    letter-spacing: 2px;
+    font-size: 2.6rem;
+    letter-spacing: 3px;
+    font-weight: 700;
 }
 
 header p {
-    opacity: 0.9;
-
+    opacity: 1;
+    font-size: 1.05rem;
+    margin-top: 6px;
+    color: #ffffff;
 }
 
 /* =========================
-     MENÚ DE NAVEGACIÓN
+   MENÚ DE NAVEGACIÓN
 ========================= */
 
 nav {
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background-color: var(--color-blanco);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -135,490 +87,237 @@ nav ul {
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
+    padding: 4px 0;
 }
 
 nav ul li {
-    margin: 10px 15px;
+    margin: 8px 12px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: var(--color-primario);
     font-weight: 600;
-    padding: 8px 12px;
+    padding: 8px 14px;
     border-radius: 8px;
-    transition: 0.3s;
+    transition: background-color var(--transicion), color var(--transicion);
+    font-size: 0.95rem;
 }
 
- HEAD
-#index h2
-{
-    font-size: 40px;
-    color:var(--color-h2);
-    margin-bottom: 20px;}
-
-
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.activo {
     background-color: var(--color-secundario);
-    color: white;
-
+    color: var(--color-blanco);
 }
 
 /* =========================
-     CONTENIDO PRINCIPAL
+   CONTENIDO PRINCIPAL
 ========================= */
 
-HEAD
-/* 
-    NOSOTROS
-*/
-
-
-#nosotros
-{
-    max-width: 1000px;
-    margin:auto;
-}
-
-#nosotros h2
-{
-    text-align: center;
-    color:var(--color-h2);
-    margin-bottom: 30px;
-
-}
-
-#nostros h3
-{
-    color:var(--color-h3);
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-#nostros p 
-{
-    margin-bottom: 20px;
-
-}
-
-/* 
-    PROGRAMA
-*/
-
-#programa 
-{
-    text-align: center;
-
-}
-
-#programas h2
-{
-    color:var(--color-h2);
-    margin-bottom: 20px;
-
-} 
-
-#programas p
-
-{
-    max-width: 900px;
-}
 main {
     max-width: 1100px;
-
-    margin: auto;
-    padding: 30px 20px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
 /* =========================
-     HERO
-========================= */
-
-.hero {
-    text-align: center;
-    padding: 30px 10px;
-}
-
-.hero p {
-    max-width: 750px;
-    margin: 20px auto;
-}
-
-.hero-botones {
-    margin-top: 30px;
-}
-
-.hero-botones a {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 22px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.btn-principal {
-    background: var(--color-secundario);
-    color: white;
-}
-
-.btn-principal:hover {
-    background: var(--color-primario);
-}
-
-.btn-secundario {
-    border: 2px solid var(--color-secundario);
-    color: var(--color-secundario);
-}
-
-.btn-secundario:hover {
-    background: var(--color-secundario);
-    color: white;
-}
-
-/* =========================
-     TITULOS Y SECCIONES
+   TÍTULOS Y SECCIONES
 ========================= */
 
 h2 {
     color: var(--color-primario);
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    margin-bottom: 16px;
 }
 
 h3 {
     color: var(--color-secundario);
     margin-bottom: 8px;
+    font-size: 1.15rem;
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
- HEAD
-/*
-    TALLERES
-*/
 
-.programas-grid
-{
-    background-color: var(--color-fondo);
-    padding:25px;
-    border-radius: 15px;
-    text-align: left;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
-    transition: transform 0.3s;
-
-}
-hr {
-    margin: 30px 0;
-    border: none;
-    height: 1px;
-HEAD
-    background: #e5e7eb;
-    background: var(--color-linea);
-
+p {
+    margin-bottom: 12px;
+    color: var(--color-gris);
 }
 
 /* =========================
-     CARDS / ARTÍCULOS
-========================= */
-
-article {
-    background: white;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    transition: transform 0.2s;
-}
-
- HEAD
-
-.programas h3
-{
-    color:var(--color-h3);
-    margin-bottom: 15px;
-
-}
-
-.programas p
-{
-    margin-bottom: 15px;
-
-}
-
-.programas ul 
-{
-    margin-left: 20px;
-    margin-top:10px;
-
-}
-
-.programas li 
-{
-    margin-bottom: 8px;
-
-}
-
-/* 
-    CONTACTO
-*/
-
-
-#contacto 
-{
-    text-align: center;
-
-}
-
-#contacto h2 
-{
-    color:var(--color-h2);
-    margin-bottom: 20px;
-    
-}
-
-#contacto p 
-{
-    margin-bottom: 15px;
-
-}
-
-/*
-    FORMULARIO
-*/
-
-form 
-{
-    max-width: 700px;
-    margin: 40px auto;
-    display:flex;
-    flex-direction: column;
-}
-
-label
-{
-    margin-top: 15px;
-    margin-bottom: 8px;
-article:hover {
-    transform: translateY(-3px);
-}}
-
-article a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #2563eb;
-
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* =========================
-     IMÁGENES
+   IMÁGENES
 ========================= */
 
 img {
     max-width: 100%;
-    border-radius: 12px;
+    border-radius: var(--radio);
+    display: block;
 }
 
 .imagen-nosotros,
 .imagen-contacto {
-    margin-top: 15px;
+    margin-top: 20px;
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
 }
 
- HEAD
-button 
-{
-    margin-top:25px;
-    padding:15px;
-    background-color: var(--color-fondo);
-    color:var(--color-texto);
-    border:none;
-    border-radius: 10px;
-    cursor:pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-    
-}
-
-button:hover{
-    background-color: var(--color-fondo);
-
-}
 /* =========================
-     FORMULARIOS
+   FORMULARIO DE CONTACTO
 ========================= */
 
-form {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    margin-top: 15px;
+.form-contacto {
+    background-color: var(--color-blanco);
+    padding: 28px;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    margin-top: 20px;
+    max-width: 600px;
 }
 
-label {
+.form-contacto label {
     display: block;
-    margin-top: 10px;
     font-weight: 600;
-
+    color: var(--color-primario);
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
 }
 
-input,
-textarea,
-select {
+.form-contacto label:first-of-type {
+    margin-top: 0;
+}
+
+.form-contacto input,
+.form-contacto select,
+.form-contacto textarea {
+    display: block;
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
+    padding: 10px 12px;
     border: 1px solid var(--color-borde);
     border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    transition: border-color var(--transicion), box-shadow var(--transicion);
+}
+
+.form-contacto input:focus,
+.form-contacto select:focus,
+.form-contacto textarea:focus {
     outline: none;
+    border-color: var(--color-secundario);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    background-color: var(--color-blanco);
 }
 
-input:focus,
-textarea:focus,
-select:focus {
-border-color: var(--color-secundario);
+.form-contacto textarea {
+    resize: vertical;
+    min-height: 120px;
 }
 
-/* =========================
-     BOTONES
-========================= */
+.form-contacto select {
+    cursor: pointer;
+}
 
-button {
-    margin-top: 15px;
-    padding: 10px 15px;
+.form-contacto button[type="submit"] {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 12px 28px;
     background-color: var(--color-secundario);
-    color: white;
+    color: var(--color-blanco);
+    font-weight: 600;
+    font-size: 0.95rem;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
+    transition: background-color var(--transicion), transform var(--transicion);
 }
 
-button:hover {
+.form-contacto button[type="submit"]:hover {
     background-color: var(--color-primario);
 }
 
-/* =========================
-     PROGRAMAS / TALLERES
+.form-contacto button[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+/* ========================
+   DATOS DE CONTACTO
 ========================= */
 
-.taller {
-    background: white;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+.datos-contacto {
+    background-color: var(--color-blanco);
+    padding: 22px;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    margin-top: 20px;
 }
 
-.taller ul {
-    margin-top: 10px;
-    padding-left: 20px;
+.datos-contacto h3 {
+    margin-bottom: 14px;
 }
 
-/* =========================
-     FORMULARIOS EN GRID
-========================= */
-
-.formularios {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.formulario-box {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-/* =========================
-     ESTADÍSTICAS
-========================= */
-
-.estadisticas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
-    margin: 40px 0;
-}
-
-.estadistica {
-    background: #ffffff;
-    text-align: center;
-    padding: 25px 15px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-.estadistica h3 {
-    font-size: 2rem;
-    color: var(--color-primario);
+.datos-contacto p {
     margin-bottom: 8px;
 }
-
-.estadistica p {
-    color: var(--color-gris);
-    font-weight: 500;
-}
-
-/* =========================
-     MENSAJE FINAL
-========================= */
-
-.mensaje-final {
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: var(--color-primario);
-    margin-top: 30px;
-}
-
-/* =========================
-     DATOS DE CONTACTO
-========================= */
 
 .datos-contacto a {
     color: var(--color-secundario);
     text-decoration: none;
     font-weight: 600;
+    transition: color var(--transicion);
 }
 
 .datos-contacto a:hover {
+    color: var(--color-primario);
     text-decoration: underline;
 }
 
 /* =========================
-     FOOTER
+   FOOTER
 ========================= */
 
 footer {
- HEAD
-    background-color: var(--color-navbar-y-footer);
-    color:var(--color-texto);
     text-align: center;
-    padding: 20px;
+    padding: 24px 20px;
     background-color: var(--color-primario);
-    color: white;
-    margin-top: 40px;
+    color: var(--color-blanco);
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    color: #ffffff;
 }
 
 /* =========================
-     RESPONSIVE
+   LISTAS GENERALES
 ========================= */
 
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
+ul {
+    padding-left: 20px;
+}
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+ul li {
+    margin-bottom: 6px;
+    color: var(--color-gris);
+}
+
+/* =========================
+   MENSAJE FINAL
+========================= */
+
+.mensaje-final {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--color-blanco);
+    background-color: var(--color-secundario);
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: var(--radio);
 }
