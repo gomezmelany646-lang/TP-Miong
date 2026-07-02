@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contactate con SANAR. Completá el formulario, llamanos al 0800-SANAR-YA o escribinos a comunidad@sanar.org. Todo contacto es confidencial.">
+    <meta name="description"
+        content="Contactate con SANAR. Completá el formulario, llamanos al 0800-SANAR-YA o escribinos a comunidad@sanar.org. Todo contacto es confidencial.">
 
     <!-- CSS -->
 
@@ -15,119 +16,107 @@
 
 <body>
 
-<!-- PRINCIPAL -->
+    <!-- PRINCIPAL -->
 
-<header>
+    <header>
 
-    <h1>SANAR</h1> <!-- Nombre del sitio -->
+        <img src="Imagenes/logo ong.jpeg" alt="Logo de SANAR">
 
-    <p>Estamos para escucharte y acompañarte.</p> <!-- Frase de presentación -->
+        <h1>SANAR</h1>
 
-</header>
+        <p>Estamos para escucharte y acompañarte.</p>
 
-<!-- MENÚ DE NAVEGACIÓN -->
+    </header>
 
- HEAD
-        <footer>
-           <h3> Información </h3> 
-           <p>ubicacion:</p>
-           <p>Av.Rivadavia 1255 <br>
-                Buenos Aires, Argentina
+    <!-- MENU DE NAVEGACIÓN -->
 
-<nav>
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="nosotros.html">Sobre Nosotros</a></li>
-        <li><a href="programas.html">Nuestros Programas</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="programas.html">Nuestros Programas</a></li>
+            <li><a href="contacto.html" class="activo">Contacto</a></li>
+        </ul>
+    </nav>
 
-<!-- CONTENIDO PRINCIPAL -->
+    <!-- CONTENIDO PRINCIPAL -->
 
-<main>
+    <main>
 
+        <!-- LA SECCION DE CONTACTO -->
 
-    <!-- LA SECCIÓN DE CONTACTO -->
+        <section id="contacto">
 
-    <section id="contacto">
+            <p>
+                La <strong>SALUD MENTAL</strong> es fundamental para el bienestar integral de todas las personas.
+                Trabajamos para brindar espacios de acompañamiento, contención y aprendizaje.
+            </p>
 
-        <!-- INTRODUCCION -->
+            <p>
+                Si tenés consultas sobre nuestros talleres, programas o formas de colaborar,
+                completá el formulario y te responderemos.
+            </p>
 
-        <p>
-            La <strong>SALUD MENTAL</strong> es fundamental para el bienestar integral de todas las personas.
-            Trabajamos para brindar espacios de acompañamiento, contención y aprendizaje.
+            <img src="imagenes/contacto.jpg" alt="SANAR espacio de acompañamiento" class="imagen-contacto">
+
+            <!-- FORMULARIO DE CONTACTO -->
+
+            <form class="form-contacto" action="#" method="post">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="motivo">Motivo:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="" disabled selected>-- Seleccioná --</option>
+                    <option value="consulta">Consulta general</option>
+                    <option value="talleres">Talleres</option>
+                    <option value="acompanamiento">Acompañamiento</option>
+                    <option value="voluntariado">Voluntariado</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+
+        </section>
+
+        <!-- DATOS DE CONTACTO -->
+
+        <section class="datos-contacto">
+
+            <h3>Datos de contacto</h3>
+
+            <p><strong>Email:</strong> <a href="mailto:comunidad@sanar.org">comunidad@sanar.org</a></p>
+            <p><strong>Teléfono:</strong> <a href="tel:+541151112382">+54 11 5111-2382</a></p>
+            <p><strong>Línea de Escucha:</strong> <a href="tel:08007262729">0800-SANAR-YA</a> (08:00 a 20:00 hs)</p>
+            <p><strong>Ubicación:</strong> Av. Rivadavia 1255, Buenos Aires, Argentina</p>
+
+        </section>
+
+        <!-- MENSAJE FINAL -->
+
+        <p class="mensaje-final">
+            Tu privacidad es nuestra prioridad. Todo contacto es confidencial y atendido por profesionales.
         </p>
 
-        <p>
-            Si tenés consultas sobre nuestros talleres, programas o formas de colaborar,
-            completá el formulario y te responderemos.
-        </p>
+    </main>
 
-        <!-- IMAGEN EN LA SECCION -->
+    <!-- COPY -->
 
-        <img src="Imagenes/contacto.jpg" alt="Equipo SANAR en espacio de acompañamiento" class="imagen-contacto">
+    <footer>
 
-        <!-- FORMULARIO DE CONTACTO -->
+        <p>&copy; 2026 SANAR. Todos los derechos reservados.</p>
 
-        <form action="#" method="post">
-
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="motivo">Motivo:</label>
-            <select id="motivo" name="motivo">
-
-                <option value="" disabled selected>-- Seleccioná --</option> <!-- opción vacía -->
-
-                <option value="consulta">Consulta general</option>
-                <option value="talleres">Talleres</option>
-                <option value="acompanamiento">Acompañamiento</option>
-                <option value="voluntariado">Voluntariado</option>
-                <option value="otro">Otro</option>
-
-            </select>
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-            <button type="submit">Enviar</button>
-
-        </form>
-
-    </section>
-
-    <!-- DATOS DE CONTACTO -->
-
-    <section class="datos-contacto">
-
-        <h3>Datos de contacto</h3>
-
-        <p><strong>Email:</strong> <a href="mailto:comunidad@sanar.org">comunidad@sanar.org</a></p>
-        <p><strong>Teléfono:</strong> <a href="tel:+541151112382">+54 11 5111-2382</a></p>
-        <p><strong>Línea de Escucha:</strong> <a href="tel:08007262729">0800-SANAR-YA</a> (08:00 a 20:00 hs)</p>
-        <p><strong>Ubicación:</strong> Av. Rivadavia 1255, Buenos Aires, Argentina</p>
-
-    </section>
-
-    <!-- MENSAJE FINAL -->
-
-    <p class="mensaje-final">
-        Tu privacidad es nuestra prioridad. Todo contacto es confidencial y atendido por profesionales.
-    </p>
-
-</main>
-
-<!-- COPY -->
-
-<footer>
-
-    <p>&copy; 2026 SANAR. Todos los derechos reservados.</p>
-
-</footer>
+    </footer>
 
 </body>
+
 </html>
