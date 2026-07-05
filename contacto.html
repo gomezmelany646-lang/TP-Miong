@@ -95,16 +95,20 @@
 
     </section>
 
- <!-- DATOS DE CONTACTO -->
+ <!-- DATOS DE CONTACTO/BOOTSTRAP TOOLTIPS -->
 
     <section class="datos-contacto">
 
         <h3>Datos de contacto</h3>
 
-        <p><strong>Email:</strong> <a href="mailto:comunidad@sanar.org">comunidad@sanar.org</a></p>
-        <p><strong>Teléfono:</strong> <a href="tel:+541151112382">+54 11 5111-2382</a></p>
-        <p><strong>Línea de Escucha:</strong> <a href="tel:08007262729">0800-SANAR-YA</a> (08:00 a 20:00 hs)</p>
-        <p><strong>Ubicación:</strong> Av. Rivadavia 1255, Buenos Aires, Argentina</p>
+        <p><strong>Email:</strong> <a href="mailto:comunidad@sanar.org" data-bs-toggle="tooltip"
+            data-bs-placement="right" title="Te respondemos en menos de 24hs">comunidad@sanar.org</a></p>
+        <p><strong>Teléfono:</strong> <a href="tel:+541151112382" data-bs-toggle="tooltip"
+                data-bs-placement="right" title="Lunes a viernes de 09:00 a 18:00hs">+54 11 5111-2382</a></p>
+        <p><strong>Línea de Escucha:</strong> <a href="tel:08007262729" data-bs-toggle="tooltip"
+                data-bs-placement="right" title="Atención gratuita todos los días">0800-SANAR-YA</a> (08:00 a 20:00 hs)</p>
+        <p><strong>Ubicación:</strong> <span data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Cerca de la estación de subte Congreso"> Av. Rivadavia 1255, Buenos Aires, Argentina</span></p>
 
     </section>
 
@@ -127,6 +131,12 @@
     <!-- BOOTSTRAP -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- BOOTSTRAP/SCRIPT ACTIVA TOOLTIPS-->
+    <script>
+        const listaTooltips = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        listaTooltips.forEach(el => new bootstrap.Tooltip(el))
+    </script>
 
 </body>
 
