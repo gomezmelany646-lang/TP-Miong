@@ -17,27 +17,6 @@
 
 </head>
 
-
-
-    <body>
-        <header>
-            
-            <img src="Imagenes/logo ong.jpeg" alt="logo de SANAR">
-            
-            <h1> SANAR </h1> 
-            <nav>
-                <ul>
-                    <li> <a href="./index.html">Inicio</a></li>
-                    <li> <a href="./nosotros.html"> Sobre Nosotros </a> </li>
-                    <li> <a href="./programas.html">Nuestros Programas</a></li>
-                    <li> <a href="./contacto.html">Contacto </a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>  
-            <!-- presentacion  -->
-
-
 <body>
 
 <header>
@@ -79,24 +58,30 @@
 
     <section class="estadisticas-index">
 
-        <article class="estadistica-index">
-           <h3>800+</h3>
-           <p>Personas acompañadas</p>
+ <!-- BOOTSTRAP/TOOLTIPS -->
+
+        <article class="estadistica-index" data-bs-toggle="tooltip" data-bs-placement="top"
+         title="Desde 2021 hasta la actualidad">
+         <h3>800+</h3>
+         <p>Personas acompañadas</p>
         </article>
 
-        <article class="estadistica-index">
-           <h3>15</h3>
-           <p>Profesionales</p>
+        <article class="estadistica-index" data-bs-toggle="tooltip" data-bs-placement="top"
+         title="Psicólogos, psiquiatras y trabajadores sociales">
+         <h3>15</h3>
+         <p>Profesionales</p>
         </article>
 
-        <article class="estadistica-index">
-           <h3>4</h3>
-           <p>Talleres activos</p>
+        <article class="estadistica-index" data-bs-toggle="tooltip" data-bs-placement="top"
+         title="Grupales e individuales, presenciales y virtuales">
+         <h3>4</h3>
+         <p>Talleres activos</p>
         </article>
 
-        <article class="estadistica-index">
-           <h3>5</h3>
-           <p>Años de trayectoria</p>
+        <article class="estadistica-index" data-bs-toggle="tooltip" data-bs-placement="top"
+         title="Trabajando por la comunidad desde 2021">
+         <h3>5</h3>
+         <p>Años de trayectoria</p>
         </article>
 
     </section>
@@ -107,28 +92,33 @@
 
         <h2>Explorá nuestro sitio</h2>
 
+ <!-- BOOTSTRAP/TOOLTIPS -->
+
  <!-- NOSOTROS -->
 
         <article>
-            <h3>Sobre Nosotros</h3>
-            <p>Conocé nuestra historia, misión y valores.</p>
-            <a href="nosotros.html">Ir a Nosotros</a>
+         <h3>Sobre Nosotros</h3>
+         <p>Conocé nuestra historia, misión y valores.</p>
+         <a href="nosotros.html" data-bs-toggle="tooltip" data-bs-placement="right"
+          title="Conocé quiénes somos y qué nos mueve">Ir a Nosotros</a>
         </article>
 
  <!-- PROGRAMAS -->
 
         <article>
-            <h3>Programas</h3>
-            <p>Talleres y espacios de acompañamiento emocional.</p>
-            <a href="programas.html">Ver Programas</a>
+         <h3>Programas</h3>
+         <p>Talleres y espacios de acompañamiento emocional.</p>
+         <a href="programas.html" data-bs-toggle="tooltip" data-bs-placement="right"
+        title="Ver todos nuestros talleres disponibles">Ver Programas</a>
         </article>
 
  <!-- CONTACTO -->
 
         <article>
-            <h3>Contacto</h3>
-            <p>Sumate o escribinos para más información.</p>
-            <a href="contacto.html">Contactar</a>
+         <h3>Contacto</h3>
+         <p>Sumate o escribinos para más información.</p>
+         <a href="contacto.html" data-bs-toggle="tooltip" data-bs-placement="right"
+         title="Te respondemos en menos de 24hs">Contactar</a>
         </article>
 
     </section>
@@ -151,6 +141,12 @@
 
  <!-- BOOTSTRAP -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+ <!-- BOOTSTRAP/SCRIPT ACTIVA TOOLTIPS-->
+    <script>
+        const listaTooltips = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        listaTooltips.forEach(el => new bootstrap.Tooltip(el))
+    </script>
 
 </body>
 
