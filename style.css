@@ -445,3 +445,29 @@ body.modo-oscuro .datos-contacto a:hover {
 body.modo-oscuro ul li {
     color: #cbd5e1;
 }
+
+/* =========================
+   BOTON VOLVER ARRIBA JAVA
+========================= */
+
+#btnArriba {
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1500;
+    background-color: var(--color-secundario);
+    color: white;
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    cursor: pointer;
+    box-shadow: var(--sombra);
+    transition: background-color var(--transicion);
+}
+
+#btnArriba:hover {
+    background-color: var(--color-primario);
+}
