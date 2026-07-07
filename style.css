@@ -23,6 +23,13 @@
     --sombra: 0 4px 12px rgba(0, 0, 0, 0.06);
     --radio: 12px;
     --transicion: 0.3s ease;
+
+    /* =============================
+      JAVA/MODO OSCURO/VARIABLES
+    ================================ */
+    --color-titulo: var(--color-primario);
+    --color-subtitulo: var(--color-secundario);
+    --color-parrafo: var(--color-gris);
 }
 
 /* =========================
@@ -125,13 +132,13 @@ main {
 ========================= */
 
 h2 {
-    color: var(--color-primario);
+    color: var(--color-titulo);
     font-size: 1.8rem;
     margin-bottom: 16px;
 }
 
 h3 {
-    color: var(--color-secundario);
+    color: var(--color-subtitulo);
     margin-bottom: 8px;
     font-size: 1.15rem;
 }
@@ -143,7 +150,7 @@ section {
 
 p {
     margin-bottom: 12px;
-    color: var(--color-gris);
+    color: var(--color-parrafo);
 }
 
 /* =========================
@@ -402,6 +409,9 @@ ul li {
 body.modo-oscuro {
     background-color: #121212;
     color: #e0e0e0;
+    --color-titulo: #e0e0e0;
+    --color-subtitulo: #93c5fd;
+    --color-parrafo: #cbd5e1;
 }
 
 body.modo-oscuro header,
@@ -413,7 +423,41 @@ body.modo-oscuro nav {
     background-color: #1e1e1e;
 }
 
+body.modo-oscuro nav ul li a {
+    color: #e0e0e0;
+}
+
 body.modo-oscuro .estadistica-index {
     background-color: #1e1e1e;
     color: #e0e0e0;
+}
+
+body.modo-oscuro .form-contacto,
+body.modo-oscuro .datos-contacto {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.modo-oscuro .form-contacto label {
+    color: #93c5fd;
+}
+
+body.modo-oscuro .form-contacto input,
+body.modo-oscuro .form-contacto select,
+body.modo-oscuro .form-contacto textarea {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+body.modo-oscuro .datos-contacto a {
+    color: #93c5fd;
+}
+
+body.modo-oscuro .datos-contacto a:hover {
+    color: #ffffff;
+}
+
+body.modo-oscuro ul li {
+    color: #cbd5e1;
 }
