@@ -363,6 +363,56 @@ body.modo-oscuro .formulario-box textarea {
 }
 
 /* =========================
+   REDES SOCIALES
+========================= */
+
+.redes-sociales {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redes-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.red-card {
+    background-color: var(--color-blanco);
+    box-shadow: var(--sombra);
+    border-radius: var(--radio);
+    border: 2px solid transparent;
+    padding: 20px 28px;
+    min-width: 120px;
+    text-decoration: none;
+    color: var(--color-texto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.red-card i {
+    font-size: 2rem;
+    color: var(--color-secundario);
+}
+
+.red-card span {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.red-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-color: var(--color-secundario);
+}
+
+/* =========================
    FOOTER
 ========================= */
 
@@ -457,6 +507,23 @@ body.modo-oscuro .datos-contacto a:hover {
 
 body.modo-oscuro ul li {
     color: #cbd5e1;
+}
+
+body.modo-oscuro ul li {
+    color: #cbd5e1;
+}
+
+body.modo-oscuro .red-card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.modo-oscuro .red-card i {
+    color: #93c5fd;
+}
+
+body.modo-oscuro .red-card:hover {
+    border-color: #93c5fd;
 }
 
 /* JAVA/MODO OSCURO/HOVER BORDE DE COLOR */
