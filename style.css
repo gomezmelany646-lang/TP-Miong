@@ -257,84 +257,51 @@ section article {
 }
 
 /* =========================
-   FORMULARIO DE CONTACTO
+   FORMULARIOS DE CONTACTO
 ========================= */
 
-.form-contacto {
+.formularios-contacto {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.formulario-box {
     background-color: var(--color-blanco);
-    padding: 28px;
+    padding: 20px;
     border-radius: var(--radio);
     box-shadow: var(--sombra);
-    margin-top: 20px;
-    max-width: 600px;
+    border: 2px solid var(--color-borde);
+    flex: 1;
+    min-width: 320px;
+    max-width: 480px;
 }
 
-.form-contacto label {
-    display: block;
-    font-weight: 600;
-    color: var(--color-primario);
-    margin-top: 18px;
-    margin-bottom: 6px;
-    font-size: 0.95rem;
+.formulario-box .mb-3 {
+    margin-bottom: 0.75rem !important;
 }
 
-.form-contacto label:first-of-type {
-    margin-top: 0;
+/* ===================================
+ JAVA/MODO OSCURO/FORMULARIO/CONTACTO
+===================================*/
+
+body.modo-oscuro .formulario-box {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
 }
 
-.form-contacto input,
-.form-contacto select,
-.form-contacto textarea {
-    display: block;
-    width: 100%;
-    padding: 10px 12px;
-    border: 1px solid var(--color-borde);
-    border-radius: 8px;
-    font-family: inherit;
-    font-size: 0.95rem;
-    color: var(--color-texto);
-    background-color: var(--color-fondo);
-    transition: border-color var(--transicion), box-shadow var(--transicion);
+body.modo-oscuro .formulario-box label {
+    color: #93c5fd;
 }
 
-.form-contacto input:focus,
-.form-contacto select:focus,
-.form-contacto textarea:focus {
-    outline: none;
-    border-color: var(--color-secundario);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
-    background-color: var(--color-blanco);
-}
-
-.form-contacto textarea {
-    resize: vertical;
-    min-height: 120px;
-}
-
-.form-contacto select {
-    cursor: pointer;
-}
-
-.form-contacto button[type="submit"] {
-    display: inline-block;
-    margin-top: 22px;
-    padding: 12px 28px;
-    background-color: var(--color-secundario);
-    color: var(--color-blanco);
-    font-weight: 600;
-    font-size: 0.95rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color var(--transicion), transform var(--transicion);
-}
-
-.form-contacto button[type="submit"]:hover {
-    background-color: var(--color-primario);
-}
-
-.form-contacto button[type="submit"]:active {
-    transform: scale(0.98);
+body.modo-oscuro .formulario-box input,
+body.modo-oscuro .formulario-box select,
+body.modo-oscuro .formulario-box textarea {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-color: #444;
 }
 
 /* ========================

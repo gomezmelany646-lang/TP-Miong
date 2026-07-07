@@ -28,7 +28,7 @@
         <h1>SANAR</h1>
         <p>Estamos para escucharte y acompañarte.</p>
 
- <!-- JAVA/BOTON DE MODO OSCURO -->
+     <!-- JAVA/BOTON DE MODO OSCURO -->
         <button id="btnOscuro" onclick="toggleOscuro()">🌑 Modo oscuro</button>
 
     </header>
@@ -39,7 +39,7 @@
       max-width: 320px; background-color: #f97316; color: white; padding: 12px 20px; 
       border-radius: 8px; font-size: 0.95rem; font-weight: 600; box-shadow: 0 4px 12px rgba(0,0,0,0.25); text-align: center;">
       Completa los formularios y te responderemos pronto 😘
-</p>
+    </p>
 
  <!-- MENU DE NAVEGACION -->
 
@@ -60,52 +60,130 @@
 
     <section id="contacto">
 
-        <p>
-            La <strong>SALUD MENTAL</strong> es fundamental para el bienestar integral de todas las personas.
-            Trabajamos para brindar espacios de acompañamiento, contención y aprendizaje.
-        </p>
+    <p>
+     La <strong>SALUD MENTAL</strong> es fundamental para el bienestar integral de todas las personas.
+     Trabajamos para brindar espacios de acompañamiento, contención y aprendizaje.
+    </p>
 
-        <p>
-            Si tenés consultas sobre nuestros talleres, programas o formas de colaborar,
-            completá el formulario y te responderemos.
-        </p>
+    <p>
+     Si tenés consultas sobre nuestros talleres, programas o formas de colaborar,
+     completá el formulario y te responderemos.
+     </p>
 
  <!-- IMAGEN GENERADA CON IA GEMINI -->
  <!-- PROMPT:" Persona femenina hablando por telefono en un ambiente tranquilo y seguro, tonos suaves de azul y blanco, sentada y a la izquierda un logo de SANAR, que la iluminacion sea calida, imagen en formato horizontal 16:9 " -->
 
         <img src="imagenes/contacto.jpg" alt="SANAR espacio de contacto" class="imagen-contacto">
 
- <!-- FORMULARIO DE CONTACTO -->
+ <!-- FORMULARIOS/PROFESIONALES Y TALLERES -->
 
-    <form class="form-contacto" id="formContacto" action="#" method="post">
+ <div class="formularios-contacto">
 
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+ <!-- FORMULARIO PROFESIONALES -->
 
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
+    <section class="formulario-box">
+        <h3>Sumate como Profesional</h3>
+        <p>Si compartís nuestra misión y querés formar parte de SANAR, completá este formulario.</p>
+        <form id="formProfesional">
+        <div class="row">
 
-        <label for="motivo">Motivo:</label>
-        <select id="motivo" name="motivo" required>
-            <option value="" disabled selected>-- Seleccioná --</option>
-            <option value="consulta">Consulta general</option>
-            <option value="talleres">Talleres</option>
-            <option value="acompanamiento">Acompañamiento</option>
-            <option value="voluntariado">Voluntariado</option>
-            <option value="otro">Otro</option>
-        </select>
+        <div class="col-6 mb-3">
+            <label for="nombre-prof" class="form-label">Nombre y apellido</label>
+            <input type="text" id="nombre-prof" class="form-control" required>
+        </div>
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        <div class="col-6 mb-3">
+            <label for="profesion" class="form-label">Profesión</label>
+         <select id="profesion" class="form-select" required>
+            <option value="">Seleccionar</option>
+            <option>Psicólogo/a</option>
+            <option>Psiquiatra</option>
+            <option>Médico/a</option>
+            <option>Psicopedagogo/a</option>
+            <option>Trabajador/a Social</option>
+            <option>Otra profesión</option>
+         </select>
+        </div>
+    </div>
 
-        <button type="submit">Enviar</button>
+        <div class="mb-3">
+            <label for="email-prof" class="form-label">Correo electrónico</label>
+            <input type="email" id="email-prof" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="telefono-prof" class="form-label">Teléfono</label>
+            <input type="tel" id="telefono-prof" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="modalidad" class="form-label">¿Cómo te gustaría colaborar?</label>
+            <select id="modalidad" class="form-select">
+                <option value="">Seleccionar</option>
+                <option>Talleres</option>
+                <option>Atención profesional</option>
+                <option>Charlas y capacitaciones</option>
+                <option>Voluntariado</option>
+                <option>Otra modalidad</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Quiero colaborar</button>
 
      <!-- JAVA/FEEDBACK -->
-        <p id="feedbackForm"></p>
-
-    </form>
-
+        <p id="feedbackProfesional"></p>
+        </form>
     </section>
+
+ <!-- FORMULARIO TALLERES -->
+  
+    <section class="formulario-box">
+        <h3>Inscripción a Talleres</h3>
+        <p>Completá el siguiente formulario para participar en nuestros talleres.</p>
+        <form id="formTalleres">
+        <div class="row">
+
+        <div class="col-6 mb-3">
+            <label for="nombre-taller" class="form-label">Nombre y apellido</label>
+            <input type="text" id="nombre-taller" class="form-control" required>
+        </div>
+
+        <div class="col-6 mb-3">
+            <label for="edad-taller" class="form-label">Edad</label>
+            <input type="number" id="edad-taller" class="form-control" min="1" required>
+        </div>
+
+        <div class="row">
+        <div class="mb-3">
+            <label for="email-taller" class="form-label">Correo electrónico</label>
+            <input type="email" id="email-taller" class="form-control" required>
+        </div>
+
+        <div class="col-6 mb-3">
+            <label for="telefono-taller" class="form-label">Teléfono</label>
+            <input type="tel" id="telefono-taller" class="form-control">
+        </div>
+     </div>
+
+        <div class="mb-3">
+            <label for="taller" class="form-label">Taller de interés</label>
+            <select id="taller" class="form-select" required>
+                <option value="">Seleccionar</option>
+                <option>Cuerpo en Movimiento</option>
+                <option>Arte que Habla</option>
+                <option>Mi Voz, Mi Mundo</option>
+                <option>Crecer y Entender mi Cuerpo</option>
+            </select>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Inscribirme</button>
+
+     <!-- JAVA/FEEDBACK -->
+        <p id="feedbackTaller"></p>
+        </form>
+    </section>
+
+ </div>
 
  <!-- DATOS DE CONTACTO/BOOTSTRAP TOOLTIPS -->
 
@@ -153,36 +231,69 @@
  <!-- JAVA/MODO OSCURO -->
     <script src="js/main.js"></script>
 
- <!-- JAVA/SCRIPT FORMULARIO Y FEEDBACK -->
-    <script>
-    const formContacto = document.getElementById('formContacto')
-    const feedbackForm = document.getElementById('feedbackForm')
+ <!-- JAVA/VALIDACION FORMULARIO PROFESIONALES -->
 
-    formContacto.addEventListener('submit', function (e) {
+    <script>
+        const formProfesional = document.getElementById('formProfesional')
+        const feedbackProfesional = document.getElementById('feedbackProfesional')
+
+        formProfesional.addEventListener('submit', function (e) {
         e.preventDefault()
 
-        const nombre = document.getElementById('nombre').value.trim()
-        const email = document.getElementById('email').value.trim()
-        const motivo = document.getElementById('motivo').value
-        const mensaje = document.getElementById('mensaje').value.trim()
+        const nombre = document.getElementById('nombre-prof').value.trim()
+        const profesion = document.getElementById('profesion').value.trim()
+        const email = document.getElementById('email-prof').value.trim()
         const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
 
-        if (nombre === '' || email === '' || motivo === '' || mensaje === '') {
-            feedbackForm.textContent = 'Por favor completá todos los campos.'
-            feedbackForm.style.color = 'red'
+        if (nombre === '' || profesion === '' || email === '') {
+            feedbackProfesional.textContent = 'Por favor completá los campos obligatorios.'
+            feedbackProfesional.style.color = 'red'
             return
         }
 
         if (!emailValido) {
-            feedbackForm.textContent = 'Ingresá un correo electrónico válido.'
-            feedbackForm.style.color = 'red'
+            feedbackProfesional.textContent = 'Ingresá un correo electrónico válido.'
+            feedbackProfesional.style.color = 'red'
             return
         }
 
-        feedbackForm.textContent = '¡Gracias! Tu mensaje fue enviado correctamente.'
-        feedbackForm.style.color = 'green'
-        formContacto.reset()
-    })
+        feedbackProfesional.textContent = '¡Gracias! Nos pondremos en contacto pronto.'
+        feedbackProfesional.style.color = 'green'
+        formProfesional.reset()
+     })
+    </script>
+
+ <!-- JAVA/VALIDACION FORMULARIO TALLERES -->
+
+    <script>
+        const formTalleres = document.getElementById('formTalleres')
+        const feedbackTaller = document.getElementById('feedbackTaller')
+
+        formTalleres.addEventListener('submit', function (e) {
+        e.preventDefault()
+
+        const nombre = document.getElementById('nombre-taller').value.trim()
+        const edad = document.getElementById('edad-taller').value.trim()
+        const email = document.getElementById('email-taller').value.trim()
+        const taller = document.getElementById('taller').value
+        const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+
+        if (nombre === '' || edad === '' || email === '' || taller === '') {
+            feedbackTaller.textContent = 'Por favor completá los campos obligatorios.'
+            feedbackTaller.style.color = 'red'
+            return
+        }
+
+        if (!emailValido) {
+            feedbackTaller.textContent = 'Ingresá un correo electrónico válido.'
+            feedbackTaller.style.color = 'red'
+            return
+        }
+
+        feedbackTaller.textContent = '¡Listo! Te esperamos en el taller.'
+        feedbackTaller.style.color = 'green'
+        formTalleres.reset()
+     })
     </script>
 
  <!-- JAVA/SCRIPT MENSAJE DE BIENVENIDA -->
