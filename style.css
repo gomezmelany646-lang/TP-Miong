@@ -245,6 +245,28 @@ img {
 }
 
 /* =========================
+   ANIMACION HOVER TARJETAS
+========================= */
+
+.estadistica-index,
+section article {
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; border-color 0.3s ease;
+}
+
+.estadistica-index:hover,
+section article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-color: var(--color-secundario);
+}
+
+/* CURSOR/MANITO */
+section article {
+    cursor: pointer;
+}
+
+/* =========================
    ACCESOS RAPIDOS
 ========================= */
 
