@@ -25,10 +25,11 @@
     <header>
 
         <img src="Imagenes/logo ong.jpeg" alt="Logo de SANAR">
-
         <h1>SANAR</h1>
-
         <p>Estamos para escucharte y acompañarte.</p>
+
+ <!-- JAVA/BOTON DE MODO OSCURO -->
+        <button id="btnOscuro" onclick="toggleOscuro()">🌑 Modo oscuro</button>
 
     </header>
 
@@ -137,6 +138,9 @@
         const listaTooltips = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         listaTooltips.forEach(el => new bootstrap.Tooltip(el))
     </script>
+
+ <!-- JAVA/MODO OSCURO -->
+    <script src="js/main.js"></script>
 
 </body>
 
