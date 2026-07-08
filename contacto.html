@@ -20,29 +20,26 @@
 
 <body>
 
- <!-- PRINCIPAL -->
+ <!-- NAVBAR UNIFICADO -->
+    <header class="navbar-principal">
 
-    <header>
+        <div class="navbar-logo">
+            <img src="imagenes/logo ong.jpeg" alt="Logo de SANAR">
+            <span class="navbar-titulo">SANAR</span>
+        </div>
 
-        <img src="Imagenes/logo ong.jpeg" alt="Logo de SANAR">
-        <h1>SANAR</h1>
-        <p>Estamos para escucharte y acompañarte.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="programas.html">Programas</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
 
-     <!-- JAVA/BOTON DE MODO OSCURO -->
-        <button id="btnOscuro" onclick="toggleOscuro()">🌑 Modo oscuro</button>
+        <button id="btnOscuro" onclick="toggleOscuro()">🌑</button>
 
     </header>
-
- <!-- MENU DE NAVEGACION -->
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Sobre Nosotros</a></li>
-            <li><a href="programas.html">Nuestros Programas</a></li>
-            <li><a href="contacto.html" class="activo">Contacto</a></li>
-        </ul>
-    </nav>
 
  <!-- CONTENIDO PRINCIPAL -->
 
@@ -51,6 +48,8 @@
  <!-- LA SECCION DE CONTACTO -->
 
     <section id="contacto">
+
+    <p class="subtitulo-hero">Estamos para escucharte y acompañarte.</p>
 
     <p>
      La <strong>SALUD MENTAL</strong> es fundamental para el bienestar integral de todas las personas.
@@ -289,17 +288,6 @@
         feedbackTaller.style.color = 'green'
         formTalleres.reset()
      })
-    </script>
-
- <!-- JAVA/SCRIPT MENSAJE DE BIENVENIDA -->
-    <script>
-        window.addEventListener('load', () => {
-           const bienvenida = document.getElementById('bienvenidaContacto')
-           bienvenida.style.display = 'block'
-           setTimeout(() => {
-            bienvenida.style.display = 'none'
-          }, 4000)
-       })
     </script>
 
 </body>
