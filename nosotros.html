@@ -14,22 +14,26 @@
 
   <body>
 
-
-    <header>
+    <!--NAVBAR UNIFICADO-->
+    <header class="navbar-principal">
       <!--IMAGEN CREADA CON CHATGPT-->
-      <img src="Imagenes/logo ong.jpeg" alt="logo de SANAR">
-      <h1>SANAR</h1>
-    </header>
+      <div class="navbar-logo">
+        <img src="Imagenes/logo ong.jpeg" alt="logo de SANAR">
+        <span class="navbar-titulo">SANAR</span>
+      </div> 
 
 
-    <nav>
+     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="nosotros.html">Sobre Nosotros</a></li>
         <li><a href="programas.html">Nuestros Programas</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
-    </nav>
+     </nav>
+      <button id="btnOscuro" onclick="toggleOscuro()">🌑</button>
+
+    </header>
 
 
        
@@ -130,7 +134,7 @@
 
     
 
-      <!-- MISION -->
+      <!-- MISION Y VISION  -->
 
      
       <section class="contenedor-mision-vision">
@@ -262,6 +266,12 @@
       <p> © 2026 SANAR. Todos los derechos reservados.</p>
 
     </footer>
+    <!--BOTON DE ARRIBA-->
+     <button id="btnArriba" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+     <!--JAVA / MODO OSCURO-->
+     <script src="js/main.js"></script>
+     <!--BOOTSTRAP-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   </body>
 </html>

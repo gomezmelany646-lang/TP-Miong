@@ -777,6 +777,38 @@ body.modo-oscuro .red-card i {
 body.modo-oscuro .red-card:hover {
     border-color: #93c5fd;
 }
+body.modo-oscuro .contenedor-mision-vision .card {
+    background-color: #0b2d2a;
+    border: 1px solid;
+    color: #e0e0e0;
+}
+body.modo-oscuro .contenedor-mision-vision .card-title{
+    color:#9ce0db ;
+}
+body.modo-oscuro .lista-dirigido li {
+    border-left: 3px solid;
+    color: #b0c4c3
+}
+body.modo-oscuro .card {
+    background-color: #0b2d2a;
+    border: 1px solid;
+    color: #e0e0e0;
+    
+}
+body.modo-oscuro .programas .card-title{
+    color: #9ce0db;
+}
+body.modo-oscuro .programas .card-text {
+    color: var(--color-blanco);
+}
+body.modo-oscuro .proximo-taller {
+  background-color: #0b2d2a;
+  border: 1px solid;
+}
+body.modo-oscuro .proximo-taller h3{
+    color: #9ce0db;
+}
+
 
 /* JAVA/MODO OSCURO/HOVER BORDE DE COLOR */
 

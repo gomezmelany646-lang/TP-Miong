@@ -20,29 +20,22 @@
 
       <!-- HEADER -->
 
-        <header>
-
-           <h1>SANAR</h1>
+        <header class="navbar-principal">
+           <div class="navbar-logo">
              <img src="Imagenes/logo ong.jpeg" alt="logo de SANAR">
-            <p>
-              Cuidamos tu salud, acompañamos tu vida
-            </p>
-
-        </header>
-
-     <!-- NAVEGACIÓN -->
-
-        <nav>
-           <ul>
+             <span class="navbar-titulo">SANAR</span>
+           </div>
+          <nav>
+            <ul>
               <li><a href="index.html">Inicio</a></li>
-
               <li><a href="nosotros.html">Sobre Nosotros</a></li>
-
-              <li><a href="programas.html"> Nuestros Programas</a></li>
-
+              <li><a href="programas.html">Nuestros Programas</a></li>
               <li><a href="contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+          </nav>
+         <button id="btnOscuro" onclick="toggleOscuro()">🌑</button> 
+            
+        </header>
 
        <!-- CONTENIDO PRINCIPAL -->
 
@@ -319,8 +312,12 @@
         </p>
 
       </footer>
-    
-
+      <!--BOTON DE ARRIBA-->
+      <button id="btnArriba" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+      <!--MODO OSCURO/ JAVA-->
+       <script src="js/main.js"></script>
+      <!--BOOTSTRAP--> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 
 </html>
