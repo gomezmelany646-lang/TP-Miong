@@ -1,5 +1,5 @@
 # TALLER DE LENGUAJES DE MARCADO Y TECNOLOGIAS WEB #
 ##  integrantes
-- Agustin Maenza
 - Melany Gomez Toledo
 - Agustin Castillo
+logotipo SANAR hecho con chat gpt
