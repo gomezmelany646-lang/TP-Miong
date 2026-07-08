@@ -276,7 +276,229 @@ img {
     font-size: 2rem;
     color: var(--color-primario);
 }
+/*==================================
+  SOBRE NOSOTROS - NACE/ PORQUE
+=================================*/
+.nace-SANAR .col-md-6:first-child{
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important; 
+}
+.nace-SANAR .card-text{
+    font-weight: bold;
+}
+.nace-SANAR .card-title{
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+.nace-SANAR .card-body{
+    text-align: center;
+}
+.por-que-SANAR .col-md-6:first-child {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.imagen-sanar {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.por-que-SANAR .card-text{
+    font-weight: bold;
+}
+.por-que-SANAR .card-title{
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+/*==============================
+  SOBRE NOSOTROS - MISION/VISION
+==============================*/
+.contenedor-mision-vision .row {
+    display: flex;
+    align-items: stretch;
+}
+.contenedor-mision-vision .card-title{
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--color-primario);
+}
+.contenedor-mision-vision .card {
+    background-color: #9ce0db;
+    border: 1px solid #1e3a8a;
+    border-radius: var(--radio);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-mision-vision .card-body{
+    padding: 2rem;
+}
+/*================================
+ A QUIEN VA DIRIGIDO - LISTAS
+ ===============================*/
+ .seccion-listas {
+    margin-bottom: 40px;
+}
 
+.titulo-lista {
+    color: var(--color-primario);
+    font-weight: 800;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.lista-dirigido{
+    list-style: none; /* Quitamos los puntos negros*/
+    padding-left: 0;
+}
+
+.lista-dirigido li {
+    padding: 12px 0;
+    padding-left: 10px;
+    border-left: 3px solid var(--color-secundario); /* Línea delgada lateral */
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    color: var(--color-texto);
+}
+/*===============================
+  SOBRE NOSOTROS - ALIADOS
+===============================*/
+.contenedor-logos {
+    display: flex;
+    flex-wrap: wrap; /* Para que bajen de renglón si la pantalla es chica */
+    justify-content: center; /* Centra los logos en la página */
+    gap: 30px; /* Espacio entre círculos */
+    padding: 20px;
+}
+
+.logo-item {
+    width: 120px; /* Tamaño del círculo */
+    height: 120px;
+    border-radius: 50%; /* Esto hace el círculo */
+    overflow: hidden; /* Recorta la imagen para que no se salga del círculo */
+    border: 1px solid; /* Un borde sutil para que resalte */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.logo-item img {
+    width: 80%; /* Ajusta el tamaño de la imagen dentro del círculo */
+    height: auto;
+}
+
+.logo-item:hover {
+    transform: scale(1.1); /* Efecto zoom al pasar el mouse */
+    border-color: #004D61;
+}
+/*================================
+SOBRE NOSOTROS - PERFILES
+================================*/
+.perfil-card {
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px auto; /* Centra el círculo */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid ; /* borde  */
+}
+
+.foto-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Evita que la foto se deforme */
+}
+
+.nombre {
+    color:var(--color-primario) ;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.carrera {
+    color: #555; /*color elegido unicamente para los perfiles*/
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #666; /* color elegido unicamente para los perfiles*/
+}
+
+/* Efecto al pasar el mouse */
+.perfil-card:hover .foto-perfil {
+    border-color: #004D61;
+    transform: scale(1.05);
+}
+/*=================================
+  PROXIMAMENTE - TALLERES/PROGRAMAS
+=================================*/  
+.card {
+ background-color:#9ce0db ;
+ border: 1px solid;
+ border-radius: var(--radio) ;
+ 
+}
+.card-body{
+ padding: 2rem;
+ ;
+
+}
+.btn-inscripcion {
+ background-color:var(--color-secundario);
+ color: #ffffff;
+ border: none;
+ padding: 12px 20px;
+ font-weight: bold;
+ transition: all 0,3s ease;
+ margin-top: 20px;
+ 
+}
+.btn-inscripcion:hover{
+    background-color: var(--color-primario);
+    color: white;
+}
+.proximos-talleres{
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20p;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+.proximo-taller{
+   background-color: #9ce0db; 
+    border: 1px solid;
+    border-radius: var(--radio);
+    padding: 20px;
+    
+    text-align: center;
+    transition: transform 0.3s ease;
+    max-width: 300px;
+    min-width: 100px;
+    display: flex;flex-direction: column;justify-content: center;
+}
+.proximo-taller h3{
+    font-size: 1.2rem;
+    margin: 0;
+    color: var(--color-primario);
+}
 /* =========================
    ANIMACION HOVER TARJETAS
 ========================= */
