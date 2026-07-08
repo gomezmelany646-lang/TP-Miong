@@ -129,13 +129,6 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.subtitulo-hero {
-    text-align: center;
-    color: var(--color-parrafo);
-    font-size: 1.05rem;
-    margin-bottom: 20px;
-}
-
 /* JAVA/MODO OSCURO/BOTON */
 #btnOscuro {
     background: none;
@@ -213,43 +206,6 @@ img {
     padding: 20px 0 40px;
 }
 
-.hero-botones-index {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-
-.btn-principal-index,
-.btn-secundario-index {
-    display: inline-block;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background-color var(--transicion), color var(--transicion);
-}
-
-.btn-principal-index {
-    background-color: var(--color-secundario);
-    color: var(--color-blanco);
-}
-
-.btn-principal-index:hover {
-    background-color: var(--color-primario);
-}
-
-.btn-secundario-index {
-    background-color: transparent;
-    color: var(--color-secundario);
-    border: 2px solid var(--color-secundario);
-}
-
-.btn-secundario-index:hover {
-    background-color: var(--color-secundario);
-    color: var(--color-blanco);
-}
 
 /* =========================
    ESTADISTICAS - INDEX
