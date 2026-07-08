@@ -3,9 +3,9 @@ function toggleOscuro() {
     document.body.classList.toggle('modo-oscuro')
     const btnOscuro = document.getElementById('btnOscuro')
     if (document.body.classList.contains('modo-oscuro')) {
-        btnOscuro.textContent = '☀️ Modo claro'
+        btnOscuro.textContent = '☀️'
     } else {
-        btnOscuro.textContent = '🌑 Modo oscuro'
+        btnOscuro.textContent = '🌑'
     }
 }
 

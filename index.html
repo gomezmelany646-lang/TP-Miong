@@ -22,15 +22,27 @@
 
 <body>
 
-<header>
-    <img src="imagenes/logo ong.jpeg" alt="Logo SANAR">
-    <h1>SANAR</h1>
-    <p>Salud mental y bienestar integral</p>
+ <!-- NAVBAR UNIFICADO -->
+    <header class="navbar-principal">
 
- <!-- JAVA/BOTON DE MODO OSCURO -->
+        <div class="navbar-logo">
+         <img src="imagenes/logo ong.jpeg" alt="Logo SANAR">
+            <span class="navbar-titulo">SANAR</span>
+        </div>
 
-    <button id="btnOscuro" onclick="toggleOscuro()">🌑 Modo oscuro</button>
-</header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="programas.html">Programas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- JAVA/BOTON DE MODO OSCURO -->
+        <button id="btnOscuro" onclick="toggleOscuro()">🌑</button>
+
+    </header>
 
  <!-- JAVA/MENSAJE DE BIENVENIDA -->
     <p id="bienvenida"
@@ -40,22 +52,12 @@
       ¡Bienvenido a SANAR! Estamos para ayudarte Titan de Titanes🐐.
 </p>
 
- <!-- MENU DE NAVEGACION -->
-
-<nav>
-    <ul>
-        <li><a href="index.html" class="activo">Inicio</a></li>
-        <li><a href="nosotros.html">Sobre Nosotros</a></li>
-        <li><a href="programas.html">Nuestros Programas</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-</nav>
-
 <main>
 
  <!-- HERO -->
 
     <section class="hero-index">
+        <p class="subtitulo-hero">Salud mental y bienestar integral</p>
         <h2>Un espacio para acompañar, escuchar y crecer</h2>
         <p>
              SANAR es una organización dedicada al bienestar emocional,
