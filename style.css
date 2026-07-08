@@ -616,3 +616,26 @@ ul li {
     padding: 20px;
     border-radius: var(--radio);
 }
+
+/* =========================
+   MODO OSCURO JAVA
+========================= */
+
+body.modo-oscuro {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.modo-oscuro header,
+body.modo-oscuro footer {
+    background: #1a1a1a;
+}
+
+body.modo-oscuro nav {
+    background-color: #1e1e1e;
+}
+
+body.modo-oscuro .estadistica-index {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
